@@ -21,6 +21,7 @@ jobs:
       - name: mirror
         run: |
           echo ${PACKAGE_URL}
+          git clone ${PACKAGE_URL}
         env:
           PACKAGE_URL: ${{matrix.PACKAGE_URL}}
 
