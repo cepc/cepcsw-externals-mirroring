@@ -1,0 +1,15 @@
+# Description:
+#   Mirroring the packages
+
+name: MirrorExternals
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  mirroring:
+    steps:
+      - cat /etc/os-release
+
