@@ -12,5 +12,7 @@ jobs:
   mirroring:
     runs-on: ubuntu-latest
     steps:
-      - cat /etc/os-release
+      - name: mirror
+        run: |
+          cat /etc/os-release
 
