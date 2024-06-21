@@ -16,7 +16,8 @@ jobs:
         # All the required packages are list here.
         PACKAGE_URL: 
           - https://gitlab.cern.ch/gaudi/Gaudi.git
-          - https://github.com/key4hep/K4FWCore
+          - https://github.com/key4hep/K4FWCore.git
+          - https://github.com/key4hep/EDM4hep.git
     steps:
       - name: clone
         run: |
