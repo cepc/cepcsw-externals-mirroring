@@ -7,6 +7,9 @@ on:
   push:
     branches:
     - master
+  
+  schedule:
+    - cron: '30 12 * * *' # try to update the mirrors every day. 
 
 jobs:
   mirroring:
