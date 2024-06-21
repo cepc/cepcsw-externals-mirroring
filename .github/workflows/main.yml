@@ -11,8 +11,16 @@ on:
 jobs:
   mirroring:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # All the required packages are list here.
+        PACKAGE_URL: 
+          - https://gitlab.cern.ch/gaudi/Gaudi
+          - https://github.com/key4hep/K4FWCore
     steps:
       - name: mirror
         run: |
-          cat /etc/os-release
+          echo ${PACKAGE_URL}
+        env:
+          PACKAGE_URL: ${{matrix.PACKAGE_URL}}
 
