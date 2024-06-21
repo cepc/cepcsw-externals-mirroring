@@ -37,5 +37,5 @@ jobs:
           
         env:
           PACKAGE_URL: ${{matrix.PACKAGE_URL}}
-          MIRROR_REPO_PREFIX: git@code.ihep.ac.cn:lintao
+          MIRROR_REPO_PREFIX: ${{secrets.REPO_TOKEN}}
 
