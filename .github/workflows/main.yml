@@ -32,7 +32,7 @@ jobs:
           package=$(basename ${PACKAGE_URL})
           cd ${package}
           git remote rename origin old-origin
-          git remote add origin ${MIRROR_REPO_PREFIX}/Gaudi.git
+          git remote add origin ${MIRROR_REPO_PREFIX}/${package}
           git push --set-upstream origin --all
           
         env:
