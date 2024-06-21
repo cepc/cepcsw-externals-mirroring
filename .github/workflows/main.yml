@@ -18,6 +18,8 @@ jobs:
           - https://gitlab.cern.ch/gaudi/Gaudi.git
           - https://github.com/key4hep/K4FWCore.git
           - https://github.com/key4hep/EDM4hep.git
+          - https://github.com/AIDASoft/DD4hep.git
+          - https://github.com/AIDASoft/podio.git
     steps:
       - name: clone
         run: |
