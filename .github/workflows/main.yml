@@ -18,11 +18,18 @@ jobs:
           - https://gitlab.cern.ch/gaudi/Gaudi.git
           - https://github.com/key4hep/K4FWCore
     steps:
-      - name: mirror
+      - name: clone
         run: |
           echo ${PACKAGE_URL}
           package=$(basename ${PACKAGE_URL})
           git clone ${PACKAGE_URL} ${package}
+
+        env:
+          PACKAGE_URL: ${{matrix.PACKAGE_URL}}
+
+      - name: mirror
+        run: |
+          package=$(basename ${PACKAGE_URL})
           cd ${package}
           git remote rename origin old-origin
           git remote add origin ${MIRROR_REPO_PREFIX}/Gaudi.git
