@@ -9,7 +9,7 @@ on:
     - master
   
   schedule:
-    - cron: '30 12 * * *' # try to update the mirrors every day. 
+    - cron: '30 6 * * *' # try to update the mirrors every day. (UTC time)
 
 jobs:
   mirroring:
