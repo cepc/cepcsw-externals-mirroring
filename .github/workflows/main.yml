@@ -24,6 +24,7 @@ jobs:
           - https://github.com/AIDASoft/DD4hep.git
           - https://github.com/AIDASoft/podio.git
           - https://github.com/cepc/GEAR
+          - https://github.com/iLCSoft/iLCUtil
     steps:
       - name: clone
         run: |
