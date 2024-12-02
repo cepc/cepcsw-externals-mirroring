@@ -25,6 +25,7 @@ jobs:
           - https://github.com/AIDASoft/podio.git
           - https://github.com/cepc/GEAR
           - https://github.com/iLCSoft/iLCUtil
+          - https://github.com/AIDASoft/aidaTT
     steps:
       - name: clone
         run: |
